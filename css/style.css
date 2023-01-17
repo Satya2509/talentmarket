@@ -137,3 +137,65 @@ a:is(:link,:active, :visited).active{
     padding: 50px ;
     font-weight: bold;
 }
+
+#hamburger{
+    display: none;
+}
+
+
+/* Responsive for device below 768px */
+
+
+@media only screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+    #hamburger{
+        display: block;
+    }
+    .logo p{
+        color: white;
+        font-size: 23px;
+        font-weight: 700;
+    
+    }
+    .logo span{
+        color: orange;
+    }
+    
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .navigations{
+        display: none;
+    }
+    .paras{
+        position: relative;
+        top: 300px;
+        /* right: -60px; */
+    }
+    .main_body{
+        /* position: fixed; */
+    }
+    .container{
+        margin-left: 0px;
+    }
+    .container h1{
+        padding-left: 20px;
+    }
+}
+
+.show{
+    display: block;
+}

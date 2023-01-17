@@ -10,7 +10,6 @@
     scroll-behavior: smooth;
     transition: all 0.2s ease-in-out;
 }
-
 #main_nav{
     background-color: rgba(23, 23, 65, 0);
     /* border-bottom: 3px solid orange; */
@@ -169,8 +168,8 @@ header{
     width: 200px;
     height: 60px;
     z-index: 1;
-    position: absolute;
-    top: 190px;
+    position: relative;
+    top: 50px;
 }
 
 /* .seller{
@@ -193,4 +192,74 @@ header{
     font-size: 14px;
     text-align: center;
     color:white;
+}
+
+#hamburger{
+    display: none;
+}
+
+/* Responsive for devices below 768px */
+
+
+@media only screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+    #hamburger{
+        display: block;
+    }
+    .logo p{
+        color: white;
+        font-size: 23px;
+        font-weight: 700;
+    
+    }
+    .logo span{
+        color: orange;
+    }
+    
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .navigations{
+        display: none;
+    }
+
+    .glow_right{
+        position: absolute;
+        top: 100px;
+        right: -250px;
+        display: none;
+    }
+    .glow_left{
+        position: absolute;
+        top: 65%;
+        left: -150px;
+    }
+
+    .paras{
+        position: relative;
+        top: 300px;
+        /* right: -60px; */
+    }
+    .main_body{
+        /* position: fixed; */
+    }
+    .container{
+        margin-left: 0px;
+    }
+}
+.show{
+    display: block;
 }

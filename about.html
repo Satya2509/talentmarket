@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/index.js" defer></script>
     <script src="./scripts/main.js" defer></script>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/png">
-</head>
-<body>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/png" />
+  </head>
+
+  <body>
     <header>
-        <nav id="main_nav">
-            <div class="logo">
-                <img src="./assets/logo.png" width="60px" alt="">
-                
-                    <p>BUCK <span><i>UP</i></span></p>
-                
+      <nav id="main_nav">
+        <div class="logo">
+          <img src="./assets/logo.png" width="60px" alt="" />
+
+          <p>
+            BUCK <span><i>UP</i></span>
+          </p>
+        </div>
+        <div class="navigations" id="menu">
+          <div class="right " >
+            <div class="navs"><a class="" href="./index.html">Home</a></div>
+            <div class="navs"><a class="" href="./about.html">About Us</a></div>
+            <div class="navs">
+              <a class="" href="./services.html">Services</a>
             </div>
-            <div class="right">
-                <div class="navs"><a class="" href="./index.html">Home</a></div>
-                <div class="navs"><a class="" href="./about.html">About Us</a></div>
-                <div class="navs"><a class="" href="./services.html">Services</a></div>
-                <div class="navs"><a class="" href="./contact.html">Contact</a></div>
-                
-                
-                
-                
-            </div>
-        </nav>
+            <div class="navs"><a class="" href="./contact.html">Contact</a></div>
+          </div>
+        </div>
+        
+        <div id="hamburger" >
+          <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
+        </div>
+      </nav>
     </header>
-    
-</body>
+  </body>
 </html>

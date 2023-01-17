@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BUCK-UP</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <script src="./scripts/index.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/png" />
   </head>
 
   <body>
+    <div class="main_body">
+
+    
     <header>
       <nav id="main_nav">
         <div class="logo">
@@ -20,13 +24,23 @@
             BUCK <span><i>UP</i></span>
           </p>
         </div>
-        <div class="right">
-          <div class="navs"><a class="" href="./index.html">Home</a></div>
-          <div class="navs"><a class="" href="./about.html">About Us</a></div>
-          <div class="navs">
-            <a class="" href="./services.html">Services</a>
+        <div class="navigations" id="menu">
+          <div class="right " >
+            <div class="navs"><a class="" href="./index.html">Home</a></div>
+            <div class="navs"><a class="" href="./about.html">About Us</a></div>
+            <div class="navs">
+              <a class="" href="./services.html">Services</a>
+            </div>
+            <div class="navs"><a class="" href="./contact.html">Contact</a></div>
           </div>
-          <div class="navs"><a class="" href="./contact.html">Contact</a></div>
+        </div>
+        
+        <div id="hamburger" >
+          <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+          </svg>
         </div>
       </nav>
     </header>
@@ -62,7 +76,8 @@
         </div>
       </div>
     </div>
-    <div class="glow"></div>
+    <div class="glow glow_right"></div>
     <div class="glow glow_left"></div>
+  </div>
   </body>
 </html>
